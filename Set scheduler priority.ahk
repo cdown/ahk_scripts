@@ -11,6 +11,9 @@ SetWorkingDir %A_ScriptDir%
 DetectHiddenWindows, On
 
 GroupAdd, Games, ahk_exe acs.exe
+GroupAdd, Games, ahk_exe WatchDogs2.exe
+GroupAdd, Games, ahk_exe ACS.exe
+GroupAdd, Games, ahk_exe WatchDogsLegion.exe
 GroupAdd, Recorders, ahk_exe obs64.exe
 
 SetTimer, UpdateSchedulerPriorities, 60000
