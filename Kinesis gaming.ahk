@@ -7,6 +7,7 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 GroupAdd, Games, ahk_exe WatchDogs2.exe
+GroupAdd, Games, ahk_exe WatchDogsLegion.exe
 
 #If WinActive("ahk_group Games")
 Space::Backspace
