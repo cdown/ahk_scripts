@@ -16,9 +16,13 @@ if !A_IsAdmin {
 
 SetTimer, StopIfOculusNotRunning, 60000
 
+ProcessExists(exe){
+    Process,Exist,%exe%
+    return errorlevel
+}
+
 StopIfOculusNotRunning:
-    Process, Exist, OVRServer_x64.exe
-    If (errorlevel != 0 && !WinExist("ahk_exe OculusClient.exe")) {
+    If (ProcessExists("OVRServer_x64.exe") && !(ProcessExists("OVRServiceLauncher.exe") || WinExist("ahk_exe OculusClient.exe"))) {
 	TrayTip, Stopping Oculus service, , , 1
 	RunWait, sc stop OVRService, , Hide
     }
