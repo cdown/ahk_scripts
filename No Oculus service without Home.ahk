@@ -22,7 +22,7 @@ ProcessExists(exe){
 }
 
 StopIfOculusNotRunning:
-    If (ProcessExists("OVRServer_x64.exe") && !(ProcessExists("OVRServiceLauncher.exe") || WinExist("ahk_exe OculusClient.exe"))) {
-	TrayTip, Stopping Oculus service, , , 1
-	RunWait, sc stop OVRService, , Hide
+    If (ProcessExists("OVRServer_x64.exe") && !WinExist("ahk_exe OculusClient.exe")) {
+        TrayTip, Stopping Oculus service, , , 1
+        RunWait, sc stop OVRService, , Hide
     }

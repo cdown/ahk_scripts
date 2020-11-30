@@ -15,6 +15,9 @@ GroupAdd, Games, ahk_exe WatchDogs2.exe
 GroupAdd, Games, ahk_exe ACS.exe
 GroupAdd, Games, ahk_exe WatchDogsLegion.exe
 GroupAdd, Recorders, ahk_exe obs64.exe
+GroupAdd, Recorders, ahk_exe 3DMarkICFWorkload.exe
+GroupAdd, Recorders, ahk_exe 3DMarkTimeSpy.exe
+GroupAdd, Recorders, ahk_exe 3DMarkPortRoyal.exe
 
 SetTimer, UpdateSchedulerPriorities, 60000
 
