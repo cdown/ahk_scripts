@@ -16,4 +16,15 @@ Backspace::Space
 
 ; Rebound in Windows, but games using raw input still see Caps Lock
 CapsLock::Ctrl
+
+; Only activate Windows key in game if it's held for half a second
+$LWin::
+    KeyWait, LWin, T0.5
+    If ErrorLevel {
+        ; More than 0.5 seconds
+        Send, {LWin Down}
+        KeyWait, LWin
+        Send, {LWin Up}
+    }
+Return
 #If
