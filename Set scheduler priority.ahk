@@ -18,9 +18,6 @@ GroupAdd, Games, ahk_exe ModernWarfare.exe
 GroupAdd, Games, ahk_exe WatchDogsLegion.exe
 GroupAdd, Games, ahk_exe Cyberpunk2077.exe
 GroupAdd, Recorders, ahk_exe obs64.exe
-GroupAdd, Recorders, ahk_exe 3DMarkICFWorkload.exe
-GroupAdd, Recorders, ahk_exe 3DMarkTimeSpy.exe
-GroupAdd, Recorders, ahk_exe 3DMarkPortRoyal.exe
 
 SetTimer, UpdateSchedulerPriorities, 60000
 
