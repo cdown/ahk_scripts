@@ -1,18 +1,16 @@
-﻿#NoEnv
+﻿; https://chrisdown.name/2020/11/16/living-with-the-kinesis-advantage-2.html
+
+#NoEnv
 #Warn
 #SingleInstance force
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
-activeWindowIsFullscreen() {
-    winID := WinExist("A")
-    WinGet style, Style, ahk_id %winID%
-    WinGetPos ,,,winW,winH, A
-    ; 0x800000 is WS_BORDER, 0x20000000 is WS_MINIMIZE.
-    Return ((style & 0x20800000) or winH < A_ScreenHeight or winW < A_ScreenWidth) ? false : true
-}
+GroupAdd, Games, ahk_exe WatchDogs2.exe
+GroupAdd, Games, ahk_exe WatchDogsLegion.exe
+GroupAdd, Games, ahk_exe Cyberpunk2077.exe
 
-#If activeWindowIsFullscreen()
+#If WinActive("ahk_group Games")
 Space::Backspace
 Backspace::Space
 
