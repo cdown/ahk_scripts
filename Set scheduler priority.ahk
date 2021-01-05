@@ -17,6 +17,7 @@ GroupAdd, Games, ahk_exe FlightSimulator.exe
 GroupAdd, Games, ahk_exe ModernWarfare.exe
 GroupAdd, Games, ahk_exe WatchDogsLegion.exe
 GroupAdd, Games, ahk_exe Cyberpunk2077.exe
+GroupAdd, Games, ahk_exe MM.exe
 GroupAdd, Recorders, ahk_exe obs64.exe
 
 SetTimer, UpdateSchedulerPriorities, 60000
