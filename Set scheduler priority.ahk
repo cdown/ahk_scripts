@@ -10,6 +10,8 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 DetectHiddenWindows, On
 
+streamlabs_exe := "Streamlabs OBS.exe"
+
 GroupAdd, Games, ahk_exe acs.exe
 GroupAdd, Games, ahk_exe WatchDogs2.exe
 GroupAdd, Games, ahk_exe ACS.exe
@@ -18,7 +20,11 @@ GroupAdd, Games, ahk_exe ModernWarfare.exe
 GroupAdd, Games, ahk_exe WatchDogsLegion.exe
 GroupAdd, Games, ahk_exe Cyberpunk2077.exe
 GroupAdd, Games, ahk_exe MM.exe
+GroupAdd, Games, ahk_exe left4dead2.exe
+GroupAdd, Games, ahk_exe hitman3.exe
+GroupAdd, Games, starwarsjedifallenorder.exe
 GroupAdd, Recorders, ahk_exe obs64.exe
+GroupAdd, Recorders, ahk_exe %streamlabs_exe%
 
 SetTimer, UpdateSchedulerPriorities, 60000
 

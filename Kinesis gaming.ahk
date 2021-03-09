@@ -10,6 +10,12 @@ GroupAdd, Games, ahk_exe WatchDogs2.exe
 GroupAdd, Games, ahk_exe WatchDogsLegion.exe
 GroupAdd, Games, ahk_exe Cyberpunk2077.exe
 GroupAdd, Games, ahk_class SniperElite4
+GroupAdd, Games, ahk_exe left4dead2.exe
+GroupAdd, Games, ahk_exe hitman3.exe
+GroupAdd, Games, ahk_exe BH6.exe
+GroupAdd, Games, ahk_exe starwarsjedifallenorder.exe
+GroupAdd, Games, ahk_exe starwarsbattlefrontii.exe
+GroupAdd, Games, ahk_exe Youngblood_x64vk.exe
 
 #If WinActive("ahk_group Games")
 Space::Backspace
