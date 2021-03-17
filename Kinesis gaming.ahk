@@ -16,6 +16,7 @@ GroupAdd, Games, ahk_exe BH6.exe
 GroupAdd, Games, ahk_exe starwarsjedifallenorder.exe
 GroupAdd, Games, ahk_exe starwarsbattlefrontii.exe
 GroupAdd, Games, ahk_exe Youngblood_x64vk.exe
+GroupAdd, Games, ahk_exe pcsx2.exe
 
 #If WinActive("ahk_group Games")
 Space::Backspace
@@ -34,4 +35,7 @@ $LWin::
         Send, {LWin Up}
     }
 Return
+	
+Media_Next::F4
+
 #If
