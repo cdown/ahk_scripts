@@ -17,6 +17,11 @@ GroupAdd, Games, ahk_exe starwarsjedifallenorder.exe
 GroupAdd, Games, ahk_exe starwarsbattlefrontii.exe
 GroupAdd, Games, ahk_exe Youngblood_x64vk.exe
 GroupAdd, Games, ahk_exe pcsx2.exe
+GroupAdd, Games, ahk_exe MassEffect1.exe
+GroupAdd, Games, ahk_exe MassEffect2.exe
+GroupAdd, Games, ahk_exe MassEffect3.exe
+GroupAdd, Games, ahk_exe re8.exe
+GroupAdd, Games, ahk_exe Watch_Dogs.exe
 
 #If WinActive("ahk_group Games")
 Space::Backspace
