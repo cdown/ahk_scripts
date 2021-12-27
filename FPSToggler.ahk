@@ -9,9 +9,10 @@ idx = 1
 
 ; Examples that make sense in Fallout 4.
 ; 
+; 0: Unlimited, since load time is tied to FPS (...)
 ; 90: The game generally works fine at this framerate
 ; 30: Sometimes door/terminal pathing will get stuck, this fixes it
-fps_list := [90, 30]
+fps_list := [0, 90, 30]
 
 ; GroupAdd for each game this should apply to.
 GroupAdd, Games, ahk_exe Fallout4.exe
