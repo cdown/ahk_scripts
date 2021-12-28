@@ -12,7 +12,12 @@ idx = 1
 ; 0: Unlimited, since load time is tied to FPS (...)
 ; 90: The game generally works fine at this framerate
 ; 30: Sometimes door/terminal pathing will get stuck, this fixes it
-fps_list := [0, 90, 30]
+;
+; Hold the key until the desired effect is achieved, then the game will revert
+; to default_fps.
+default_fps = 90
+pathing_fps = 30
+unlimited_fps = 0
 
 ; GroupAdd for each game this should apply to.
 GroupAdd, Games, ahk_exe Fallout4.exe
@@ -22,9 +27,18 @@ set_fps(fps) {
     ControlSend, ahk_parent, %fps%{enter}, RivaTunerStatisticsServer
 }
 
+set_fps(default_fps)
+
 #IfWinActive, ahk_group Games
-Home::
-    set_fps(fps_list[idx])
-    idx := Mod(idx, fps_list.MaxIndex()) + 1
+PgUp::
+    set_fps(unlimited_fps)
+    KeyWait, PgUp
+    set_fps(default_fps)
+Return
+
+PgDn::
+    set_fps(pathing_fps)
+    KeyWait, PgDn
+    set_fps(default_fps)
 Return
 #IfWinActive
