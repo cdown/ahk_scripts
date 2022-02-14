@@ -22,6 +22,10 @@ GroupAdd, Games, ahk_exe MassEffect2.exe
 GroupAdd, Games, ahk_exe MassEffect3.exe
 GroupAdd, Games, ahk_exe re8.exe
 GroupAdd, Games, ahk_exe Watch_Dogs.exe
+GroupAdd, Games, ahk_exe TombRaider.exe
+GroupAdd, Games, ahk_exe BioShockInfinite.exe
+GroupAdd, Games, ahk_exe MgsGroundZeroes.exe
+GroupAdd, Games, ahk_exe mgsvtpp.exe
 
 #If WinActive("ahk_group Games")
 Space::Backspace
